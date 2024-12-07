@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+</head>
+<body>
+    Don't Try to Copy this Text 
+
+    <script>
+        document.addEventListener("copy", (event) => {
+            const selctedData = window.getSelection().toString();
+            event.clipboardData.setData(
+                "text/plain",
+                "👆🏼"
+            );
+            event.preventDefault();
+        })
+    </script>
+</body>
+</html>
